@@ -7,6 +7,14 @@ import BitacoraAlarmas from "@/views/Modules/BitacoraAlarmas.vue"
 import MonitoreoCruces from '@/views/Modules/MonitoreoCruces.vue'
 import EnvioTransacciones from '@/views/Modules/EnvioTransacciones.vue'
 import BusquedaCruces from '@/views/Modules/BusquedaCruces.vue'
+import BitacoraAccesos from '@/views/Modules/BitacoraAccesos.vue'
+import EstatusTags from '@/views/Modules/EstatusTags.vue'
+import Configuracion from '@/views/Modules/Configuracion.vue'
+import PerfilUsuario from '@/views/Modules/PerfilUsuario.vue'
+import ListaPerfiles from '@/views/Modules/ListaPerfiles.vue'
+import ListaUsuarios from '@/views/Modules/ListaUsuarios.vue'
+import RegistroUsuarios from '@/views/Modules/RegistroUsuarios.vue'
+
 const routes = [
     {
         path: '/',
@@ -48,7 +56,42 @@ const routes = [
         name:'BusquedaCruces',
         component:BusquedaCruces
     },
-
+    {
+        path: '/inicio/bitacora-accesos',
+        name:'BitacoraAccesos',
+        component:BitacoraAccesos
+    },
+    {
+        path: '/inicio/estatus-tags',
+        name:'EstatusTags',
+        component:EstatusTags
+    },
+    {
+        path: '/configuracion',
+        name:'Configuracion',
+        component:Configuracion
+    },
+    {
+        path: '/configuracion/perfil-usuario',
+        name:'PerfilUsuario',
+        component:PerfilUsuario
+    },
+    {
+        path: '/configuracion/lista-perfiles',
+        name:'ListaPerfilUsuario',
+        component:ListaPerfiles
+    },
+    {
+        path: '/configuracion/lista-usuarios',
+        name:'ListaUsuarios',
+        component:ListaUsuarios
+    },
+    {
+        path: '/configuracion/registro-usuarios',
+        name:'RegistroUsuarios',
+        component:RegistroUsuarios
+    },
+  
 
 ]
 
